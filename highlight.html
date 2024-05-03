@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Highlight Effect</title>
+ <style>
+  body{
+   background: #000;
+  }
+  span{
+   font-family: "poppins",sans-serif;
+   font-size: 1.5rem;
+   font-weight: 900;
+   text-transform: uppercase;
+   position: absolute;
+   padding: 10px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-image: linear-gradient(
+    rgb(255,0,0), rgb(255,0,0)
+   );
+   background-size: 100% 5px;
+   background-repeat: no-repeat;
+   background-position: 100% 0%;
+   color: white;
+   transition: background-size .7s,
+   background-position .5s ease-in-out;
+  }
+  span:hover{
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s,
+    background-size .5s ease-in-out;
+  }
+ </style>
+</head>
+<body>
+    <span>we love to code</span>
+</body>
+</html>
